@@ -17,5 +17,13 @@ public class Zadanie1 {
         } else {
             System.out.println("Błąd");
         }
+
+        LucasGenerator lucasGenerator = new LucasGenerator();
+        ok = SequenceTools.writeToFile(lucasGenerator, 0, 10, "lucas_sequence.txt");
+        if (ok) {
+            System.out.println("Wynik zapisany do pliku: lucas_sequence.txt");
+        } else {
+            System.out.println("Błąd");
+        }
     }
 }
